@@ -1,0 +1,6 @@
+35 8 * * 1-5  /bin/bash -c 'source ${HOME}/.rvm/scripts/rvm && ${HOME}/workspace/opener/open.rb >> /tmp/cron-stdout.txt 2>> /tmp/cron-stderr.txt'
+
+45,50,55 8 * * 1-5  /bin/bash -c 'source ${HOME}/.rvm/scripts/rvm && ${HOME}/workspace/opener/reload.rb >> /tmp/cron-stdout.txt 2>> /tmp/cron-stderr.txt'
+00,05 9 * * 1-5  /bin/bash -c 'source ${HOME}/.rvm/scripts/rvm && ${HOME}/workspace/opener/reload.rb >> /tmp/cron-stdout.txt 2>> /tmp/cron-stderr.txt'
+
+25 9 * * 1-5  /bin/bash -c 'source ${HOME}/.rvm/scripts/rvm && ${HOME}/workspace/opener/close.rb >> /tmp/cron-stdout.txt 2>> /tmp/cron-stderr.txt'
